@@ -8,11 +8,11 @@ composer require baba/rest-api-client
 
 # Example
 ```
-  use BABA\JSON\API\Client\DataProvider\CURL;
-  use BABA\JSON\API\Client\JsonRestApiClient;
+  use BABA\REST\API\Client\DataProvider\CURL;
+  use BABA\REST\API\Client\RESTRestApiClient;
   
-  $client = new JsonRestApiClient(new CURL());
-  var_dump($client->get('http://api.example.com/test.json')); 
+  $client = new RESTRestApiClient(new CURL());
+  var_dump($client->get('http://api.example.com/test.REST')); 
 ```
 
 # Supports

@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "BABA\\JSON\\API\\Client\\": "src/"
+      "BABA\\REST\\API\\Client\\": "src/"
     }
   },
   "provide": {
@@ -18,7 +18,7 @@
   },
   "require": {
     "php": ">=7.3",
-    "ext-json": "*",
+    "ext-REST": "*",
     "ext-curl": "*"
   }
 }

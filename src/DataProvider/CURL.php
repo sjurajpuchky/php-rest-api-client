@@ -1,9 +1,9 @@
 <?php
 
 
-namespace BABA\JSON\API\Client\DataProvider;
+namespace BABA\REST\API\Client\DataProvider;
 
-use BABA\JSON\API\Client\IDataProvider;
+use BABA\REST\API\Client\IDataProvider;
 
 class CURL implements IDataProvider
 {

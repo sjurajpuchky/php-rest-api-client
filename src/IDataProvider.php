@@ -1,7 +1,7 @@
 <?php
 
 
-namespace BABA\JSON\API\Client;
+namespace BABA\REST\API\Client;
 
 
 interface IDataProvider

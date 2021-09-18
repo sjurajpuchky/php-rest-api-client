@@ -1,6 +1,6 @@
 <?php
 
-namespace BABA\JSON\API\Client;
+namespace BABA\REST\API\Client;
 
 class RestApiClient implements IApiClient
 {
@@ -8,7 +8,7 @@ class RestApiClient implements IApiClient
     private $dataProviderClient;
 
     /**
-     * JsonRestApiClient constructor.
+     * RESTRestApiClient constructor.
      * @param IDataProvider $dataProviderClient
      */
     public function __construct(IDataProvider $dataProviderClient)
