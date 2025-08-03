@@ -18,7 +18,7 @@ class CURL implements IDataProvider
         $this->ignoreSSL = $ignoreSSL;
     }
 
-    public function request($method, $url, $data = '', $headers = []): string
+    public function request($method, $url, $data = '', $headers = [], $timeout = null): string
     {
         $ch = curl_init($url);
 
@@ -46,7 +46,13 @@ class CURL implements IDataProvider
             default:
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         }
+        if($timeout) {
+            // Connection timeout (seconds)
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 
+            // Overall timeout (seconds)
+            curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
+        }
         if($this->ignoreSSL) {
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

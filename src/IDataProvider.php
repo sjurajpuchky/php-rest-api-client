@@ -12,5 +12,5 @@ interface IDataProvider
     const METHOD_DELETE = 3;
     const METHOD_HEAD = 4;
 
-    public function request($method, $url, $data = '', $headers = []): string;
+    public function request($method, $url, $data = '', $headers = [], $timeout = null): string;
 }
