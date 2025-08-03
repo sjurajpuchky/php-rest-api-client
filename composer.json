@@ -1,5 +1,5 @@
 {
-  "name": "baba/rest-api-client",
+  "name": "baba/api-client",
   "type": "library",
   "license": "GPL-2.0-only",
   "authors": [
@@ -14,7 +14,7 @@
     }
   },
   "provide": {
-    "baba/rest-api-client": "1.0.0"
+    "baba/rest-api-client": "1.0.1"
   },
   "require": {
     "php": ">=7.3",
